@@ -9,7 +9,7 @@ my @rev = reverse @ARGV;
 my $second = "no second value";
 
 if ($len > 1) {
-  $second = @num_sort[1];
+  $second = @ARGV[1];
 }
 
 print "
