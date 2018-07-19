@@ -43,6 +43,23 @@ Second element in \@ARGV : $second
 ********************* THE END ******************
 "
 ```
+./PROG1.pl 11 12 1 2 13 14
+```
+
+********************* PROG 1 ********************
+******* by Jon Craton ***************************
+*************************************************
+# of elements in @ARGV : 6
+Largest Index in @ARGV : 5
+List of elements in @ARGV : 11 12 1 2 13 14 
+Reversed List of Elements : 14 13 2 1 12 11
+*************************************************
+Sorted @ARGV by ASCII : 1 11 12 13 14 2
+Sorted @ARGV by number : 1 2 11 12 13 14
+Largest numeric value in @ARGV : 14
+Second element in @ARGV : 12
+********************* THE END ******************
+```
 
 Tcl
 ---
@@ -86,32 +103,6 @@ Second element in \@ARGV : $second
 ********************* THE END ******************
 "
 ```
-
-Testing
--------
-
-Both scripts passed the basic tests in the included makefile. These tests are verified by [TravisCI](https://travis-ci.org/jncraton/csc710-perl-tcl). You can also download the code and run the tests yourself.
-
-Examples
---------
-
-./PROG1.pl 11 12 1 2 13 14
-```
-
-********************* PROG 1 ********************
-******* by Jon Craton ***************************
-*************************************************
-# of elements in @ARGV : 6
-Largest Index in @ARGV : 5
-List of elements in @ARGV : 11 12 1 2 13 14 
-Reversed List of Elements : 14 13 2 1 12 11
-*************************************************
-Sorted @ARGV by ASCII : 1 11 12 13 14 2
-Sorted @ARGV by number : 1 2 11 12 13 14
-Largest numeric value in @ARGV : 14
-Second element in @ARGV : 12
-********************* THE END ******************
-```
 ./PROG1.tcl 11 12 1 2 13 14
 ```
 
@@ -130,3 +121,8 @@ Second element in @ARGV : 12
 ********************* THE END ******************
 
 ```
+
+Testing
+-------
+
+Both scripts passed the basic tests in the included makefile. These tests are verified by [TravisCI](https://travis-ci.org/jncraton/csc710-perl-tcl). You can also download the code and run the tests yourself.
