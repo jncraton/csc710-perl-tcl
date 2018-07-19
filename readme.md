@@ -43,7 +43,7 @@ Second element in \@ARGV : $second
 ********************* THE END ******************
 "
 ```
-Example usage:
+### Example Usage
 ```
 > ./PROG1.pl 11 12 1 2 13 14
 
@@ -60,6 +60,22 @@ Sorted @ARGV by number : 1 2 11 12 13 14
 Largest numeric value in @ARGV : 14
 Second element in @ARGV : 12
 ********************* THE END ******************
+```
+### Tests
+```
+> make PROG1.pl.test
+./PROG1.pl 11 12 1 2 13 14 | grep -q "# of elements in @ARGV : 6" 
+./PROG1.pl 11 12 1 2 13 14 | grep -q "Largest Index in @ARGV : 5" 
+./PROG1.pl 11 12 1 2 13 14 | grep -q "List of elements in @ARGV : 11 12 1 2 13 14" 
+./PROG1.pl 11 12 1 2 13 14 | grep -q "Reversed List of Elements : 14 13 2 1 12 11" 
+./PROG1.pl 11 12 1 2 13 14 | grep -q "Sorted @ARGV by ASCII : 1 11 12 13 14 2" 
+./PROG1.pl 11 12 1 2 13 14 | grep -q "Sorted @ARGV by number : 1 2 11 12 13 14" 
+./PROG1.pl 11 12 1 2 13 14 | grep -q "Largest numeric value in @ARGV : 14" 
+./PROG1.pl 11 12 1 2 13 14 | grep -q "Second element in @ARGV : 12" 
+./PROG1.pl 1 2 3 -3 | grep -q "Reversed List of Elements : -3 3 2 1" 
+./PROG1.pl 1 2 3 -3 | grep -q "Sorted @ARGV by number : -3 1 2 3"
+./PROG1.pl 1 | grep -q "no second value" 
+./PROG1.pl -1 | grep -q "no second value" 
 ```
 
 Tcl
@@ -104,7 +120,7 @@ Second element in \@ARGV : $second
 ********************* THE END ******************
 "
 ```
-Example usage:
+### Example Usage
 ```
 > ./PROG1.tcl 11 12 1 2 13 14
 
@@ -122,6 +138,22 @@ Largest numeric value in @ARGV : 14
 Second element in @ARGV : 12
 ********************* THE END ******************
 
+```
+### Tests
+```
+> make PROG1.tcl.test
+./PROG1.pl 11 12 1 2 13 14 | grep -q "# of elements in @ARGV : 6" 
+./PROG1.pl 11 12 1 2 13 14 | grep -q "Largest Index in @ARGV : 5" 
+./PROG1.pl 11 12 1 2 13 14 | grep -q "List of elements in @ARGV : 11 12 1 2 13 14" 
+./PROG1.pl 11 12 1 2 13 14 | grep -q "Reversed List of Elements : 14 13 2 1 12 11" 
+./PROG1.pl 11 12 1 2 13 14 | grep -q "Sorted @ARGV by ASCII : 1 11 12 13 14 2" 
+./PROG1.pl 11 12 1 2 13 14 | grep -q "Sorted @ARGV by number : 1 2 11 12 13 14" 
+./PROG1.pl 11 12 1 2 13 14 | grep -q "Largest numeric value in @ARGV : 14" 
+./PROG1.pl 11 12 1 2 13 14 | grep -q "Second element in @ARGV : 12" 
+./PROG1.pl 1 2 3 -3 | grep -q "Reversed List of Elements : -3 3 2 1" 
+./PROG1.pl 1 2 3 -3 | grep -q "Sorted @ARGV by number : -3 1 2 3"
+./PROG1.pl 1 | grep -q "no second value" 
+./PROG1.pl -1 | grep -q "no second value" 
 ```
 
 Testing
