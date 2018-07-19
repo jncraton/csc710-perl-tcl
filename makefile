@@ -17,7 +17,7 @@ all: readme.md PROG1.pl.test PROG1.tcl.test
 	./$< 1 | grep -q "no second value" 
 	./$< -1 | grep -q "no second value" 
 
-readme.md: PROG1.pl PROG1.tcl readme.head.md perl.md tcl.md readme.tail.md 
+readme.md: PROG1.pl PROG1.tcl readme.head.md perl.md tcl.md
 	cat readme.head.md perl.md PROG1.pl > readme.md
 	
 	echo "\`\`\`" >> readme.md
@@ -45,8 +45,7 @@ readme.md: PROG1.pl PROG1.tcl readme.head.md perl.md tcl.md readme.tail.md
 	echo "\`\`\`" >> readme.md
 	echo "> make PROG1.tcl.test" >> readme.md
 	make --no-print-directory PROG1.tcl.test >> readme.md
+	echo "\`\`\`" >> readme.md
 	
-	cat readme.tail.md >> readme.md
-
 clean:
 	rm -f readme.md
