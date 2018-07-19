@@ -9,6 +9,6 @@ The language is commonly embedded in C or other application to provide a flexibl
 
 [Information from https://en.wikipedia.org/wiki/Tcl]
 
-Here is the example code:
+Below is the requested example script. It is also available directly as [PROG1.tcl](PROG1.tcl).
 
 ```tcl
