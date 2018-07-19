@@ -21,15 +21,17 @@ readme.md: PROG1.pl PROG1.tcl readme.head.md perl.md tcl.md readme.tail.md
 	cat readme.head.md perl.md PROG1.pl > readme.md
 	
 	echo "\`\`\`" >> readme.md
-	echo "./PROG1.pl 11 12 1 2 13 14" >> readme.md
+	echo "Example usage:" >> readme.md
 	echo "\`\`\`" >> readme.md
+	echo "> ./PROG1.pl 11 12 1 2 13 14" >> readme.md
 	./PROG1.pl 11 12 1 2 13 14 >> readme.md
 
 	cat tcl.md PROG1.tcl >> readme.md
 
 	echo "\`\`\`" >> readme.md
-	echo "./PROG1.tcl 11 12 1 2 13 14" >> readme.md
+	echo "Example usage:" >> readme.md
 	echo "\`\`\`" >> readme.md
+	echo "> ./PROG1.tcl 11 12 1 2 13 14" >> readme.md
 	./PROG1.tcl 11 12 1 2 13 14 >> readme.md
 	
 	cat readme.tail.md >> readme.md
