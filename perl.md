@@ -5,6 +5,6 @@ Perl was created by Larry Wall in 1987 in order to make report processing simple
 
 [Information from https://en.wikipedia.org/wiki/Perl]
 
-Here is an example:
+Below is the requested example script. It is also available directly as [PROG1.pl](PROG1.pl).
 
 ```perl
