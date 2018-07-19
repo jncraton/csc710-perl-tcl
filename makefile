@@ -44,7 +44,7 @@ readme.md: PROG1.pl PROG1.tcl readme.head.md perl.md tcl.md readme.tail.md
 	echo "### Tests" >> readme.md
 	echo "\`\`\`" >> readme.md
 	echo "> make PROG1.tcl.test" >> readme.md
-	make --no-print-directory PROG1.pl.test >> readme.md
+	make --no-print-directory PROG1.tcl.test >> readme.md
 	
 	cat readme.tail.md >> readme.md
 
