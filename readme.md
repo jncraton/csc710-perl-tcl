@@ -142,21 +142,21 @@ Second element in @ARGV : 12
 ### Tests
 ```
 > make PROG1.tcl.test
-./PROG1.pl 11 12 1 2 13 14 | grep -q "# of elements in @ARGV : 6" 
-./PROG1.pl 11 12 1 2 13 14 | grep -q "Largest Index in @ARGV : 5" 
-./PROG1.pl 11 12 1 2 13 14 | grep -q "List of elements in @ARGV : 11 12 1 2 13 14" 
-./PROG1.pl 11 12 1 2 13 14 | grep -q "Reversed List of Elements : 14 13 2 1 12 11" 
-./PROG1.pl 11 12 1 2 13 14 | grep -q "Sorted @ARGV by ASCII : 1 11 12 13 14 2" 
-./PROG1.pl 11 12 1 2 13 14 | grep -q "Sorted @ARGV by number : 1 2 11 12 13 14" 
-./PROG1.pl 11 12 1 2 13 14 | grep -q "Largest numeric value in @ARGV : 14" 
-./PROG1.pl 11 12 1 2 13 14 | grep -q "Second element in @ARGV : 12" 
-./PROG1.pl 1 2 3 -3 | grep -q "Reversed List of Elements : -3 3 2 1" 
-./PROG1.pl 1 2 3 -3 | grep -q "Sorted @ARGV by number : -3 1 2 3"
-./PROG1.pl 1 | grep -q "no second value" 
-./PROG1.pl -1 | grep -q "no second value" 
+./PROG1.tcl 11 12 1 2 13 14 | grep -q "# of elements in @ARGV : 6" 
+./PROG1.tcl 11 12 1 2 13 14 | grep -q "Largest Index in @ARGV : 5" 
+./PROG1.tcl 11 12 1 2 13 14 | grep -q "List of elements in @ARGV : 11 12 1 2 13 14" 
+./PROG1.tcl 11 12 1 2 13 14 | grep -q "Reversed List of Elements : 14 13 2 1 12 11" 
+./PROG1.tcl 11 12 1 2 13 14 | grep -q "Sorted @ARGV by ASCII : 1 11 12 13 14 2" 
+./PROG1.tcl 11 12 1 2 13 14 | grep -q "Sorted @ARGV by number : 1 2 11 12 13 14" 
+./PROG1.tcl 11 12 1 2 13 14 | grep -q "Largest numeric value in @ARGV : 14" 
+./PROG1.tcl 11 12 1 2 13 14 | grep -q "Second element in @ARGV : 12" 
+./PROG1.tcl 1 2 3 -3 | grep -q "Reversed List of Elements : -3 3 2 1" 
+./PROG1.tcl 1 2 3 -3 | grep -q "Sorted @ARGV by number : -3 1 2 3"
+./PROG1.tcl 1 | grep -q "no second value" 
+./PROG1.tcl -1 | grep -q "no second value" 
 ```
 
 Testing
 -------
 
-Both scripts passed the basic tests in the included makefile. These tests are verified by [TravisCI](https://travis-ci.org/jncraton/csc710-perl-tcl). You can also download the code and run the tests yourself.
+Both scripts passed the basic tests in the included makefile. These tests are verified by [TravisCI](https://travis-ci.org/jncraton/csc710-perl-tcl). You can also download the code and run the tests yourself. Successful execution of `make` confirms that tests passed for both scripts.
